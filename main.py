@@ -128,7 +128,7 @@ print("Coefficient:", model.coef_)
 print("Intercept:", model.intercept_)
 
 baseline_accuracy = y_test.mean()
-print("Baseline accuracy (always predit home win):", baseline_accuracy)
+print("Baseline accuracy (always predict home win):", baseline_accuracy)
 
 probs = model.predict_proba(X_test)[:, 1]
 print("Log loss:", log_loss(y_test, probs))
